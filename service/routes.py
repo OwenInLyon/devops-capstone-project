@@ -114,7 +114,7 @@ def delete_account(account_id):
     app.logger.info("Request to delete account: ", account_id)
     account = Account.find(account_id)
     if account:
-        account.delete()  
+        account.delete()
 
     return "", status.HTTP_204_NO_CONTENT
 
